@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ポンコツ</title>
+<link rel="stylesheet" href="./pkt_files/style.css">
+<script src="https://kit.fontawesome.com/c105f52f00.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="intro-modal">
+    <div class="intro">
+      <i class="far fa-window-close" id="close-intro"></i>
+      <div class="clear"></div>
+      <p>このページに訪れていただきありがとうございます。練習のために作成したページなので、たぶん不備がありますが、ぜひいろいろいじってみてください。</p>
+    </div>
+  </div>
+  <div id="hello-modal">
+    <div class="hello">
+      <i class="far fa-window-close" id="close-hello"></i>
+      <p id="hello-btn">押しまくってください</p>
+      <p id="hello-world">Hello world!</p>
+    </div>
+  </div>
+  <div id="sns-modal">
+    <div class="sns-window">
+      <i class="far fa-window-close" id="close-sns"></i>
+      <div class="clear"></div>
+      <p>すいません、SNSとの連携の仕方はわかりませんでした。そっと閉じてください。</p>
+    </div>
+  </div>
+  <header>
+    <div class="header-container">
+      <div class="header-title">
+        <a href="#"><h1>ポンコツ</h1></a>
+      </div>
+      <div class="header-menus">
+        <ul>
+          <li class="header-menu" id="show-intro">押してみてね</li>
+          <li class="header-menu" id="show-hello">無限"Hello World!"</li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </header>
+  <div class="sns-container">
+    <ul>
+      <li class="sns twitter sns-btns"><i class="fa fa-twitter"></i>Twitter</li>
+      <li class="sns facebook sns-btns"><i class="fa fa-facebook"></i>facebook</li>
+      <li class="sns instagram sns-btns"><i class="fa fa-instagram"></i>instagram</li>
+    </ul>
+  </div>
+  <div id="scroll-container"><i class="fas fa-arrow-alt-circle-up"></i></div>
+  <main>
+    <div class="main-title">
+      <h1>Progateで学べること</h1>
+      <h2>HTML/CSS/jQuery</h2>
+    </div>
+    <div class="main-profile main-container">
+      <h2>自己紹介</h2>
+      <p>はじめまして、ponkotsuhacksといいます。まずは、このページに訪れていただきありがとうございます。<br>
+      僕は、そこらへんにいるごく普通のサラリーマンなんですが、オフィスでカタカタと難解なコードを書くプログラマーに昔から憧れがありました。</p>
+      <p>ということで、いざProgateを始め、いろいろ学んだのでこのページで一部紹介しようと思います。<br>
+      <span class="attention">とはいうものの、練習のつもりで作ったので結構適当なことも書いているかもしれません。すいませんm(_ _)m</span></p>
+      <p class="profile-summary">この記事は、Progateというプログラミング学習サイトの<span class="html">HTML&CSS</span>・<span class="jquery">jQuery</span>コースで学べる知識を使って作成しています。<br>
+      逆に言うと、<span class="html">HTML&CSS</span>・<span class="jquery">jQuery</span>コースで出てこない知識はほとんど使っていません。<br>
+      このページをいじってみて、Progateの<span class="html">HTML&CSS</span>・<span class="jquery">jQuery</span>コースで学べる範囲をなんとなくでも掴んでもらうことが目的です。</p>
+    </div>
+    <div class="main-index main-container">
+      <h2>目次 <span id="undisplay">[表示/非表示]</span></h2>
+      <ul id="indexes">
+        <li><i class="fa fa-check"></i><a href="#content01" class="index">Progateとは</a></li>
+        <li><i class="fa fa-check"></i><a href="#content02" class="index">HTML・CSS・jQueryとは</a></li>
+        <li><i class="fa fa-check"></i><a href="#content03" class="index">Q&A</a></li>
+      </ul>
+    </div>
+    <div class="main-content main-container">
+      <div class="content" id="content01">
+        <h2>Progateとは</h2>
+        <p>Progateは、Web上で完結する初心者用プログラミング学習サイトです。環境構築が不要なことから、これまで多くの初学者の支持を得ています。</p>
+        <p>ちなみに、扱っている言語はこんな感じです。</p>
+        <ul class="language-list">
+          <li><i class="fab fa-html5"></i><i class="fab fa-css3-alt"></i><span class="html">HTML&CSS</span></li>
+          <li><i class="fab fa-js-square"></i>JavaScript</li>
+          <li><i class="fab fa-js-square"></i><span class="jquery">jQuery</span></li>
+          <li><i class="fas fa-gem"></i>Ruby</li>
+          <li><i class="fas fa-gem"></i>Ruby on Rails5</li>
+          <li><i class="fab fa-php"></i>PHP</li>
+          <li><i class="fab fa-java"></i>Java</li>
+          <li><i class="fab fa-python"></i>Python</li>
+          <li><i class="fas fa-terminal"></i>Command Line</li>
+          <li><i class="fab fa-git"></i>Git</li>
+          <li><i class="fas fa-database"></i>SQL</li>
+          <li><i class="fab fa-sass"></i>Sass</li>
+          <li><i class="fab fa-google"></i>Go</li>
+          <li><i class="fab fa-react"></i>React</li>
+          <li><i class="fab fa-node-js"></i>Node.js</li>
+        </ul>
+        <p>また、学習すればするほどレベルが上がっていくという、ゲームのようなシステムも人気の秘密かも。</p>
+      </div>
+      <div id="content02">
+        <h2>HTML・CSS・jQueryとは</h2>
+        <div class="language-description">
+          <h3>HTML</h3>
+          <p><span class="html">HTML</span>は、Webページを作成するための最も基本的な言語で、インターネット上のWebページのほとんどに<span class="html">HTML</span>が使われています。</p>
+          <p>一般に、Webページで見られるテキストやリンク、画像などは<span class="html">HTML</span>で記述されています。逆に、文字の装飾や動的なアニメーションなどは<span class="html">HTML</span>では表現できません。</p>
+          <p>ためしに、<span class="html">HTML</span>のみで作成した<a href="./pkt_files/htmlOnly.html" class="html-only">こちらのページ</a>をクリックしてみてください。味気ないページになっていると思います。</p>
+        </div>
+        <div class="language-description">
+          <h3>CSS</h3>
+          <p><span class="html">CSS</span>は、Webページのデザインやレイアウトなどの見栄えを整えるための言語です。</p>
+          <p>例えば、<span class="example">このような文字の装飾</span>とかは<span class="html">CSS</span>ですね！</p>
+        </div>
+        <div class="language-description">
+          <h3>jQuery</h3>
+          <p><span class="jquery">jQuery</span>は、JavaScriptのライブラリの一つで、Webページに効果やアニメーションを実装できる言語です。</p>
+          <p>このページで言うと、目次の表示/非表示の切り替えやヘッダー右側のボタンで小窓を表示させるなどの動作が該当します。</p>
+          <p>実際に<span class="jquery">jQuery</span>の効果を体験してもらうために、ボタンを2つ用意しました。2つのボタンは、どちらもページトップへのジャンプボタンです。
+          ただし、左側は<span class="html">HTML</span>でリンク先指定したもの、右側は<span class="jquery">jQuery</span>で実装したものです。ぜひ違いを体感してください。</p>
+          <div class="jump-btns">
+            <a href="#" class="html-jump jump-btn">ページトップへ</a>
+            <span id="jquery-top" class="jquery-jump jump-btn">ページトップへ</span>
+          </div>
+        </div>
+      </div>
+      <div id="content03">
+        <h2>Q&A</h2>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">内容薄くないですか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">途中で面倒臭くなってしまいました。許してください。</div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">このページを作るのに何時間かかりましたか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">15時間です。ちょっとかかり過ぎちゃいました。</div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">何も見ずにこのページを作ったんですか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">いいえ、Progateに戻ったり、Googleで調べたりしました。むしろ、調べている時間の方が長かったです。</div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">プログラミング歴を教えてください。</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">
+            <p>ざっくりこんな感じです。</p>
+            <ul class="answer-list">
+              <li>Progate : HTML&CSS・JavaScript・PHP・Java・Python・Command Line・Git・SQL・Sass・Node.jsを1周ずつ。jQuery2周。</li>
+              <li>模写コーディング : 3ページ分(かなり適当にやりました)</li>
+            </ul>
+            <p>あと、仕事でたまに(10回/年ぐらい)PythonとかVBA使います。つまり初学者です。</p>
+          </div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">模写コーディングって何ですか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">既存のWebページを自分で作ってみるやつです。</div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">Progateのいい点を教えてください。</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">いろいろありますが、解説が非常にわかりやすい点と、ゲーム感覚で楽しく進められる点が特にいいと思いました。
+          </div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">Progateはおすすめですか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">
+            <p>初学者なので初学者の観点からですが、次の点でかなりおすすめです。</p>
+            <ul class="answer-list">
+              <li>環境構築が不要なので手軽に始められる。</li>
+              <li>とにかく解説がわかりやすい。(クラスの解説とかめっちゃわかりやすい。)</li>
+              <li>安い。</li>
+              <li>楽しい。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">Progateだけで、お金稼げるほどの技術はつきますか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">無理だと思います。知らんけど。少なくとも、僕は現時点で案件獲得できる気がしません。</div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">HTML&CSSコースとjQueryコースを1周するのにどのくらい時間がかかりますか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">個人差はあるでしょうが、Progateが提案している修了目安時間は30時間ぐらいです。</div>
+        </div>
+        <div class="qa-container">
+          <div class="question-container">
+            <p class="question">他に何か言いたいことはありますか？</p>
+            <p class="answer-display">回答を見る</p>
+            <div class="clear"></div>
+          </div>
+          <div class="answer">instagramも見てね👉<a href="https://www.instagram.com/ponkotsucamera" class="insta">@ponkotsucamera</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">©️ponkotsuhacks(2020/5/5)</div>
+      <div class="footer-right">
+        <ul>
+          <li class="tw sns-btn sns-btns"><i class="fa fa-twitter"></i></li>
+          <li class="fb sns-btn sns-btns"><i class="fa fa-facebook"></i></li>
+          <li class="ig sns-btn sns-btns"><i class="fa fa-instagram"></i></li>    
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script src="./pkt_files/script.js"></script>
+</body>
+</html>
